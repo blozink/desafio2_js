@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.exercise-container {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+img {
+    cursor: pointer;
+}
+
+img.with-border {
+    border: 2px solid red;
+}
+
+.stickers-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sticker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sticker input {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.password-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    margin-top: 20px;
+}

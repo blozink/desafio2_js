@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 2 Condiciones</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+</head>
+<body>
+    <h1>Desafío 2 Condiciones</h1>
+    
+    <div class="exercise-container">
+        <h2>Ejercicio 1</h2>
+        <p>Toca la imagen 🤔</p>
+        <img id="toggleBorderImage" width="500px" src="./assets/img/1.jpg" alt="Imagen para Ejercicio 1" onclick="toggleBorder(this)">
+    </div>
+
+    <div class="exercise-container">
+        <h2>Ejercicio 2</h2>
+        <p>Puedes llevar hasta 10 stickers en total 🎁</p>
+        <div class="stickers-container">
+            <div class="sticker">
+                <img height="200px" src="./assets/img/2.png" alt="Sticker 1">
+                <input type="number" id="sticker1" min="0" max="10" value="0">
+            </div>
+            <div class="sticker">
+                <img height="200px" src="./assets/img/3.png" alt="Sticker 2">
+                <input type="number" id="sticker2" min="0" max="10" value="0">
+            </div>
+            <div class="sticker">
+                <img height="200px" src="./assets/img/4.png" alt="Sticker 3">
+                <input type="number" id="sticker3" min="0" max="10" value="0">
+            </div>
+        </div>
+        <button onclick="calculateStickers()">Calcular Stickers</button>
+        <p id="stickerResult"></p>
+    </div>
+
+    <div class="exercise-container">
+        <h2>Ejercicio 3</h2>
+        <p>Adivina la contraseña 👀</p>
+        <div class="password-container">
+            <select id="digit1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select id="digit2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select id="digit3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+        <button onclick="checkPassword()">Ingresar</button>
+        <p id="passwordResult"></p>
+    </div>
+
+    <script src="./assets/js/ejercicios.js"></script>
+</body>
+</html>
